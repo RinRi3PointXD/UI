@@ -651,7 +651,7 @@ function Library:CreateWindow(Config, Parent)
 					Dropdown.Container.Holder.Size = UDim2.new(1,-5,0,Dropdown.Container.Holder.Container.ListLayout.AbsoluteContentSize.Y)
 					Dropdown.Size = UDim2.new(1,-10,0,Dropdown.Container.Holder.Container.ListLayout.AbsoluteContentSize.Y + Dropdown.Title.TextBounds.Y + 30)
 				end
-				function DropdownInit:Update(OptionTable)
+				function DropdownInit:Update(OptionTable,Callback)
 					DropdownInit:ClearOptions()
 					
 					for _,OptionName in pairs(OptionTable) do
